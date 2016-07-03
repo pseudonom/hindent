@@ -15,7 +15,7 @@ import Language.Haskell.Exts.Extension
 import qualified HIndent
 
 styles :: [FilePath]
-styles = ["fundamental", "gibiansky", "chris-done", "johan-tibell", "cramer"]
+styles = ["fundamental", "gibiansky", "chris-done", "johan-tibell", "cramer", "front-row"]
 
 testDir, expectedDir :: String
 testDir = "tests"

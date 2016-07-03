@@ -13,6 +13,7 @@ module HIndent
   ,styles
   ,chrisDone
   ,johanTibell
+  ,frontRow
   ,fundamental
   ,gibiansky
   ,cramer
@@ -29,6 +30,7 @@ import           HIndent.Comments
 import           HIndent.Pretty
 import           HIndent.Styles.ChrisDone (chrisDone)
 import           HIndent.Styles.Cramer (cramer)
+import           HIndent.Styles.FrontRow (frontRow)
 import           HIndent.Styles.Fundamental (fundamental)
 import           HIndent.Styles.Gibiansky (gibiansky)
 import           HIndent.Styles.JohanTibell (johanTibell)
@@ -232,7 +234,7 @@ testAst x =
 -- | Styles list, useful for programmatically choosing.
 styles :: [Style]
 styles =
-  [fundamental,chrisDone,johanTibell,gibiansky,cramer]
+  [fundamental,chrisDone,johanTibell,gibiansky,cramer,frontRow]
 
 -- | Default extensions.
 defaultExtensions :: [Extension]
