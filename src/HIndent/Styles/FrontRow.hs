@@ -53,8 +53,8 @@ frontRow =
            ,Extender fieldupdate
            ]
         ,styleDefConfig =
-           defaultConfig {configMaxColumns = 80
-                         ,configIndentSpaces = 4}
+           defaultConfig {configMaxColumns = 120
+                         ,configIndentSpaces = 2}
         ,styleCommentPreprocessor = return}
 
 --------------------------------------------------------------------------------
