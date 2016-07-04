@@ -1,3 +1,7 @@
 resolver: nightly-2015-12-11
 packages:
 - '.'
+
+nix:
+  shell-file: shell.nix
+  enable: false
