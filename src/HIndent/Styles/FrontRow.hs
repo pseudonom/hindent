@@ -377,10 +377,13 @@ decl (DataDecl _ dataornew ctx dhead condecls@[_] mderivs)
        case mderivs of
          Nothing -> return ()
          Just derivs -> pretty derivs
-  where multiCons xs =
-          depend (write " =")
-                 (inter (write "|")
-                        (map (depend space . qualConDecl) xs))
+  where multiCons xs = do
+          newline
+          indentSpaces <- getIndentSpaces
+          column indentSpaces
+                 (do depend (write "=")
+                            (inter (write "|")
+                                   (map (depend space . qualConDecl) xs)))
 decl e = prettyNoExt e
 
 -- | Use special record display, used by 'dataDecl' in a record scenario.
